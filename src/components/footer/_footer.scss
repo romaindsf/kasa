@@ -1,0 +1,30 @@
+@use "../../utils/utils";
+
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 66px 0 30px 0;
+
+    @include utils.font(24px, 500);
+    color: white;
+
+    p {
+        padding-top: 50px;
+    }
+
+    @include utils.small-screen {
+
+        padding-bottom: 58px;
+
+        @include utils.font(12px, 500);
+        color: white;
+
+        p {
+            width: 110px;
+            padding-top: 0;
+        }
+    }
+}
