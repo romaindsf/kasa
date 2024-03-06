@@ -1,0 +1,26 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header ul {
+  display: flex;
+  justify-content: space-around;
+}
+header a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: black;
+}
+header a:first-child {
+  padding-right: 55px;
+}
+header a:hover {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}/*# sourceMappingURL=stylesheet.css.map */
