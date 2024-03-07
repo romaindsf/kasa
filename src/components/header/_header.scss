@@ -2,43 +2,32 @@
 
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 45px 100px 50px 100px;
+    padding: 20px 20px 27px 20px;
 
-    @include utils.small-screen {
-        justify-content: flex-start;
-        padding: 20px 20px 27px 20px;
-
-        img {
-            width: auto;
-            height: 47px;
-        }
+    img {
+        height: 47px;
     }
-
     ul {
         display: flex;
         justify-content: flex-end;
         list-style-type: none;
+    }
+    li:first-of-type {
+        padding-right: 26px;
 
-        li:first-of-type {
+        @include utils.large-screen {
             padding-right: 55px;
-
-            @include utils.small-screen {
-                padding-right: 26px;
-            }
         }
     }
+    a {
+        @include utils.font(12px, 500);
 
-    a{
-        @include utils.font(24px, 500);
-
-        &:hover{
+        &:hover {
             text-decoration: underline;
         }
-
-        @include utils.small-screen {
-            font-size: 12px;
+        @include utils.large-screen {
+            font-size: 24px;
         }
     }
 }

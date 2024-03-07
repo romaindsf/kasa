@@ -14,12 +14,11 @@ footer {
         @include utils.font(24px, 500);
         padding-bottom: 30px;
     }
-
     p {
         width: 110px;
 
         @include utils.large-screen {
-            @include utils.font(24px, 500);
+            font-size: 24px;
             width: auto;
             padding-top: 50px;
         }
