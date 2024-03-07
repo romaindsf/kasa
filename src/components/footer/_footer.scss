@@ -6,25 +6,22 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 66px 0 30px 0;
-
-    @include utils.font(24px, 500);
+    padding: 66px 0 58px 0;
+    @include utils.font(12px, 500);
     color: white;
 
-    p {
-        padding-top: 50px;
+    @include utils.large-screen {
+        @include utils.font(24px, 500);
+        padding-bottom: 30px;
     }
 
-    @include utils.small-screen {
+    p {
+        width: 110px;
 
-        padding-bottom: 58px;
-
-        @include utils.font(12px, 500);
-        color: white;
-
-        p {
-            width: 110px;
-            padding-top: 0;
+        @include utils.large-screen {
+            @include utils.font(24px, 500);
+            width: auto;
+            padding-top: 50px;
         }
     }
 }

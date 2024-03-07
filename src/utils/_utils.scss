@@ -7,8 +7,8 @@
     color: black;
 }
 
-@mixin small-screen{
-    @media (max-width: 720px){
+@mixin large-screen{
+    @media (min-width: 720px){
         @content;
     }
 }
