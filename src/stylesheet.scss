@@ -1,8 +1,18 @@
 @use "./utils/utils";
+@use "./utils/reset_css";
 @use "./components/header/header";
+@use "./components/rental_list/rental_list";
+@use "./components/thumbnail/_thumbnail.scss";
 @use "./components/footer/footer";
 
 a {
     text-decoration: none;
-    cursor: pointer;
+}
+.main_container {
+    width: 90%;
+    margin: 0 auto 27px auto;
+
+    @include utils.large-screen {
+        margin-bottom: 50px;
+    }
 }

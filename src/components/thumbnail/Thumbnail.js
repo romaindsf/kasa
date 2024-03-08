@@ -1,8 +1,8 @@
 function Thumbnail ({id, cover, title}) {
     return (
-        <li key={id} className="thumbnail">
+        <li className="thumbnail">
             <img src={cover} alt={`photo ${title}`}/>
-            <h2>{title}</h2>
+            <figure>{title}</figure>
         </li>
     )
 }
