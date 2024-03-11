@@ -33,6 +33,15 @@
         left: 5%;
         @include utils.font(24px, 700);
         color: white;
+
+        @media screen and (min-width: 576px) and (max-width: 992px) {
+            @include utils.font(36px, 700);
+            color: white;
+        }
+        @media screen and (min-width: 992px) {
+            @include utils.font(48px, 700);
+            color: white;
+        }
     }
     .a_la_ligne {
         display: block;
