@@ -2,6 +2,7 @@
 @use "./utils/reset_css";
 @use "./components/header/header";
 @use "./components/error/error";
+@use "./components/banner/banner";
 @use "./components/rental_list/rental_list";
 @use "./components/thumbnail/_thumbnail.scss";
 @use "./components/footer/footer";
