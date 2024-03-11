@@ -4,18 +4,14 @@ function CompanyValue({title, content, index}) {
     const [openIndex, setOpenIndex] = useState(null);
 
     return (
-        <div 
+        <li 
             className="company_value" 
             key={`${title}${index}`} 
             onClick={() => setOpenIndex(openIndex === index ? null : index)}
         >
             {title}
-            {openIndex === index && (
-                <div>
-                    <p>{content}</p>
-                </div>
-            )}
-        </div>
+            {openIndex === index && <div>{content}</div>}
+        </li>
     );
 }
 
