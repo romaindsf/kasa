@@ -10,11 +10,11 @@ function APropos() {
       <img src={img} alt='bannière d un paysage de montagnes'/>
     </Banner>
     <ul className='a_propos'>
-      {company_values.map(({title, content}, index) => (
-        <CompanyValue key={`${title}${index}`}
+      {company_values.map(({title, content}, id) => (
+        <CompanyValue key={id}
           title={title}
           content={content}
-          index={index}
+          id={id}
         />
       ))}
     </ul>
