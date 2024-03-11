@@ -10,25 +10,25 @@ header {
     img {
         height: 47px;
     }
-    ul {
+    nav {
         display: flex;
         justify-content: flex-end;
-    }
-    li:first-of-type {
-        padding-right: 26px;
-
-        @include utils.large-screen {
-            padding-right: 55px;
-        }
     }
     a {
         @include utils.font(12px, 500);
 
+        @include utils.large-screen {
+            font-size: 24px;
+        }
         &:hover {
             text-decoration: underline;
         }
-        @include utils.large-screen {
-            font-size: 24px;
+        &:first-of-type {
+            padding-right: 26px;
+
+            @include utils.large-screen {
+                padding-right: 55px;
+            }
         }
     }
 }

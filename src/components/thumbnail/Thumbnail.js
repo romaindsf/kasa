@@ -1,7 +1,7 @@
 function Thumbnail ({id, cover, title}) {
     return (
         <li className="thumbnail">
-            <img src={cover} alt={`photo ${title}`}/>
+            <img src={cover} alt={`Couverture de ${title}`}/>
             <figure>{title}</figure>
         </li>
     )
