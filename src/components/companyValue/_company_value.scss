@@ -1,0 +1,42 @@
+@use "../../utils/utils";
+
+.company_value {
+    &__title{
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        background-color: #FF6060;
+        @include utils.font(13px, 700);
+        color: white;
+
+        @include utils.large-screen {
+            font-size: 24px;
+            margin-bottom: 28px;
+            border-radius: 5px;
+        }
+    }
+    &__content {
+        position: relative;
+        bottom: 20px;
+        background-color: #F6F6F6;
+
+        @include utils.large-screen {
+            bottom: 28px
+        }
+        
+        p {
+            @include utils.font(12px, 400);
+            line-height: 17px;
+            padding: 10px;
+            width: 94%;
+            margin: 0 auto;
+
+            @include utils.large-screen {
+                line-height: 25px;
+                width: 100%;
+                padding: 20px;
+                font-size: 18px;
+            }
+        }
+    }
+}
