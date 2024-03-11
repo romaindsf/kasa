@@ -84,6 +84,73 @@ header a:first-of-type {
   }
 }
 
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 113px auto;
+}
+.error h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 96px;
+  font-weight: 700;
+  color: black;
+  color: #FF6060;
+  margin-bottom: 113px;
+}
+@media (min-width: 480px) {
+  .error h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 288px;
+    font-weight: 700;
+    color: black;
+    color: #FF6060;
+  }
+}
+.error h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  color: #FF6060;
+  text-align: center;
+  margin-bottom: 113px;
+}
+@media (min-width: 480px) {
+  .error h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    color: black;
+    color: #FF6060;
+  }
+}
+.error .a_la_ligne {
+  display: block;
+}
+@media (min-width: 480px) {
+  .error .a_la_ligne {
+    display: inline;
+  }
+}
+.error a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+  text-decoration: underline;
+}
+@media (min-width: 480px) {
+  .error a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+  }
+}
+
 .rental_list {
   display: grid;
   grid: auto/1fr;

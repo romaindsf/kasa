@@ -1,0 +1,46 @@
+@use "../../utils/utils";
+
+.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 113px auto;
+    h1 {
+        @include utils.font(96px, 700);
+        color: #FF6060;
+        margin-bottom: 113px;
+
+        @include utils.large-screen {
+            @include utils.font(288px, 700);
+            color: #FF6060
+        }
+    }
+    h2 {
+        @include utils.font(18px, 500);
+        color: #FF6060;
+        text-align: center;
+        margin-bottom: 113px;
+
+        @include utils.large-screen {
+            @include utils.font(36px, 500);
+            color: #FF6060
+        }
+    }
+    .a_la_ligne{
+        display: block;
+
+        @include utils.large-screen {
+            display: inline;
+        }
+    }
+    a {
+        @include utils.font(14px, 500);
+        text-decoration: underline;
+
+        @include utils.large-screen {
+            @include utils.font(18px, 500);
+        }
+    }
+}
