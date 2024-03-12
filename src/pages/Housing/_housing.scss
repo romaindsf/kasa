@@ -1,0 +1,20 @@
+@use "../../utils/utils";
+
+.rental_info{
+    h1 {
+        @include utils.font(18px, 500);
+        color: #FF6060;
+
+        @include utils.large-screen {
+            @include utils.font(36px, 500);
+            color: #FF6060;
+        }
+    }
+    p {
+        @include utils.font(14px, 500);
+
+        @include utils.large-screen {
+            @include utils.font(18px, 500);
+        }
+    }
+}

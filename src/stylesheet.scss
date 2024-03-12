@@ -1,5 +1,6 @@
 @use "./utils/utils";
 @use "./utils/reset_css";
+@use "./pages/Housing/housing";
 @use "./components/header/header";
 @use "./components/error/error";
 @use "./components/banner/banner";
@@ -8,6 +9,7 @@
 @use "./components/footer/footer";
 @use "./components/companyValue/company_value";
 @use "./components/slideshow/slideshow";
+@use "./components/tags/tags";
 
 a {
     text-decoration: none;

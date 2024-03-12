@@ -47,6 +47,37 @@ input {
   border-radius: 0;
 }
 
+.rental_info h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  color: #FF6060;
+}
+@media (min-width: 480px) {
+  .rental_info h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    color: black;
+    color: #FF6060;
+  }
+}
+.rental_info p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+}
+@media (min-width: 480px) {
+  .rental_info p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+  }
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -387,6 +418,32 @@ footer p {
 }
 .slideshow .arrow__right {
   right: 0px;
+}
+
+.tags_list {
+  display: flex;
+  gap: 10px;
+}
+.tags_list li {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  color: black;
+  color: white;
+  padding: 2px 30px;
+  background-color: #FF6060;
+  border-radius: 10px;
+}
+@media (min-width: 480px) {
+  .tags_list li {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+    color: white;
+    padding: 3px 40px;
+  }
 }
 
 a {

@@ -1,0 +1,21 @@
+@use "../../utils/utils";
+
+.tags_list {
+    display: flex;
+    gap: 10px;
+
+    li {
+        display: inline-block;
+        @include utils.font(10px, 700);
+        color: white;
+        padding: 2px 30px;
+        background-color: #FF6060;
+        border-radius: 10px;
+
+        @include utils.large-screen {
+            @include utils.font(14px, 700);
+            color: white;
+            padding: 3px 40px;
+        }
+    }
+}

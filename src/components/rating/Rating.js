@@ -1,0 +1,1 @@
+import rental_list from '../../datas/rental_ad_list.json'
