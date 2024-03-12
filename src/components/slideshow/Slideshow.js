@@ -18,11 +18,9 @@ function Slideshow() {
 
     return (
         <div className="slideshow">
-            <button onClick={prevSlide} className='arrow arrow__left' type='button'>Previous</button>
-            <div className="slide">
-                <img src={rental_list[currentIndex].pictures[currentSlide]} alt="miam" />
-            </div>
-            <button onClick={nextSlide} className='arrow arrow__right' type='button'>Next</button>
+            <button onClick={prevSlide} className='arrow arrow__left' type='button'>---</button>
+            <img src={rental_list[currentIndex].pictures[currentSlide]} alt="miam" />
+            <button onClick={nextSlide} className='arrow arrow__right' type='button'>+++</button>
         </div>
     );
 }
