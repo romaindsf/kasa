@@ -245,6 +245,7 @@ header a:first-of-type {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
+  cursor: pointer;
 }
 .thumbnail img {
   width: 100%;
@@ -253,10 +254,10 @@ header a:first-of-type {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.thumbnail figure {
+.thumbnail figcaption {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: 6%;
+  left: 6%;
   width: 50%;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
@@ -344,6 +345,48 @@ footer p {
     padding: 20px;
     font-size: 18px;
   }
+}
+
+.slideshow {
+  position: relative;
+  max-width: 1240px;
+  height: 255px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .slideshow {
+    height: 335px;
+    border-radius: 18px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .slideshow {
+    height: 415px;
+    border-radius: 25px;
+  }
+}
+.slideshow img {
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.slideshow .arrow {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.slideshow .arrow__left {
+  left: 0px;
+}
+.slideshow .arrow__right {
+  right: 0px;
 }
 
 a {
