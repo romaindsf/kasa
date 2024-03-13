@@ -6,6 +6,9 @@
 
     li {
         display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         @include utils.font(10px, 700);
         color: white;
         padding: 2px 30px;

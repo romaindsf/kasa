@@ -1,8 +1,8 @@
-function Tags({ rental_list, currentIndex }) {
+function Tags({ rentalInfo }) {
     return (
         <ul className="tags_list">
-            {rental_list[currentIndex].tags.map((tag) => (
-                <li key={`${rental_list[currentIndex].id}-${tag}`}>
+            {rentalInfo.tags.map((tag, index) => (
+                <li key={index}>
                     {tag}
                 </li>
             ))}
