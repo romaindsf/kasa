@@ -426,6 +426,9 @@ footer p {
 }
 .tags_list li {
   display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Montserrat", sans-serif;
   font-size: 10px;
   font-weight: 700;
