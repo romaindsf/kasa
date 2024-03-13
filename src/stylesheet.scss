@@ -7,9 +7,10 @@
 @use "./components/rental_list/rental_list";
 @use "./components/thumbnail/_thumbnail.scss";
 @use "./components/footer/footer";
-@use "./components/companyValue/company_value";
+@use "./components/Dropdown/dropdown";
 @use "./components/slideshow/slideshow";
 @use "./components/tags/tags";
+@use "./components/Rating/rating";
 
 a {
     text-decoration: none;

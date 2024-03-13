@@ -1,25 +1,23 @@
-import img from '../../assets/paysage-montagneux.avif'
+import bannerSrc from '../../assets/paysage-montagneux.avif'
 import company_values from '../../datas/company_values'
-import Banner from '../../components/banner/Banner'
-import CompanyValue from '../../components/companyValue/CompanyValue';
+import Banner from '../../components/Banner/Banner'
+import Dropdown from '../../components/Dropdown/Dropdown';
 
 function APropos() {
   return ( 
   <div className='main_container'>
-    <Banner>
-      <img src={img} alt='bannière d un paysage de montagnes'/>
-    </Banner>
+    <Banner
+      bannerSrc={bannerSrc}
+    />
     <div className='a_propos'>
-      {company_values.map(({title, content}, id) => (
-        <CompanyValue key={id}
+      {company_values.map(({title, content}, index) => (
+        <Dropdown key={index}
           title={title}
           content={content}
-          id={id}
         />
       ))}
     </div>
   </div>
   );
 }
-  
-  export default APropos;
+export default APropos;

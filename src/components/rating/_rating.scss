@@ -1,0 +1,17 @@
+@use "../../utils/utils";
+
+.rating {
+    display: flex;
+    gap: 4px;
+
+    @include utils.large-screen {
+        gap: 9px;
+    }
+    svg {
+        font-size: 13px;
+        
+        @include utils.large-screen {
+            font-size: 24px;
+        }
+    }
+}

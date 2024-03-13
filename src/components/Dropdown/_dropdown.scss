@@ -1,10 +1,12 @@
 @use "../../utils/utils";
 
-.company_value {
+.dropdown {
     &__title{
+        display: flex;
+        justify-content: space-between;
         padding: 10px;
         margin-bottom: 20px;
-        border-radius: 10px;
+        border-radius: 5px;
         background-color: #FF6060;
         @include utils.font(13px, 700);
         color: white;
@@ -14,11 +16,17 @@
             margin-bottom: 28px;
             border-radius: 5px;
         }
+
+        svg {
+            font-size: 16px;
+            margin-right: 2px;
+        }
     }
     &__content {
         position: relative;
         bottom: 20px;
         background-color: #F6F6F6;
+        list-style: none;
 
         @include utils.large-screen {
             bottom: 28px

@@ -47,15 +47,16 @@ input {
   border-radius: 0;
 }
 
-.rental_info h1 {
+.housing__titleLocationTags h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 500;
   color: black;
   color: #FF6060;
+  line-height: 26px;
 }
 @media (min-width: 480px) {
-  .rental_info h1 {
+  .housing__titleLocationTags h1 {
     font-family: "Montserrat", sans-serif;
     font-size: 36px;
     font-weight: 500;
@@ -63,19 +64,47 @@ input {
     color: #FF6060;
   }
 }
-.rental_info p {
+.housing__titleLocationTags p {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 500;
   color: black;
+  margin: 15px 0;
 }
 @media (min-width: 480px) {
-  .rental_info p {
+  .housing__titleLocationTags p {
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
     font-weight: 500;
     color: black;
   }
+}
+.housing__ratingHost {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0 12px 0;
+}
+.housing__ratingHost__Host {
+  display: flex;
+  align-items: center;
+}
+.housing__ratingHost__Host p {
+  display: inline-block;
+  width: 50px;
+  margin-right: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: black;
+  color: #FF6060;
+  text-align: end;
+  line-height: 17px;
+}
+.housing__ratingHost__Host img {
+  width: 32px;
+  height: auto;
+  border-radius: 50%;
 }
 
 header {
@@ -331,10 +360,12 @@ footer p {
   }
 }
 
-.company_value__title {
+.dropdown__title {
+  display: flex;
+  justify-content: space-between;
   padding: 10px;
   margin-bottom: 20px;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #FF6060;
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
@@ -343,23 +374,28 @@ footer p {
   color: white;
 }
 @media (min-width: 480px) {
-  .company_value__title {
+  .dropdown__title {
     font-size: 24px;
     margin-bottom: 28px;
     border-radius: 5px;
   }
 }
-.company_value__content {
+.dropdown__title svg {
+  font-size: 16px;
+  margin-right: 2px;
+}
+.dropdown__content {
   position: relative;
   bottom: 20px;
   background-color: #F6F6F6;
+  list-style: none;
 }
 @media (min-width: 480px) {
-  .company_value__content {
+  .dropdown__content {
     bottom: 28px;
   }
 }
-.company_value__content p {
+.dropdown__content p {
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   font-weight: 400;
@@ -370,7 +406,7 @@ footer p {
   margin: 0 auto;
 }
 @media (min-width: 480px) {
-  .company_value__content p {
+  .dropdown__content p {
     line-height: 25px;
     width: 100%;
     padding: 20px;
@@ -425,18 +461,18 @@ footer p {
   gap: 10px;
 }
 .tags_list li {
-  display: inline-block;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   font-family: "Montserrat", sans-serif;
   font-size: 10px;
   font-weight: 700;
   color: black;
   color: white;
-  padding: 2px 30px;
+  width: 84px;
   background-color: #FF6060;
-  border-radius: 10px;
+  border-radius: 6px;
 }
 @media (min-width: 480px) {
   .tags_list li {
@@ -445,7 +481,25 @@ footer p {
     font-weight: 700;
     color: black;
     color: white;
-    padding: 3px 40px;
+    width: 115px;
+  }
+}
+
+.rating {
+  display: flex;
+  gap: 4px;
+}
+@media (min-width: 480px) {
+  .rating {
+    gap: 9px;
+  }
+}
+.rating svg {
+  font-size: 13px;
+}
+@media (min-width: 480px) {
+  .rating svg {
+    font-size: 24px;
   }
 }
 

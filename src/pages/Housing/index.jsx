@@ -1,31 +1,42 @@
 import { useParams } from 'react-router-dom'
 import rental_list from '../../datas/rental_ad_list.json'
 import Slideshow from '../../components/slideshow/Slideshow'
-import Tags from '../../components/tags/Tags'
+import Tags from '../../components/Tags/Tags'
+import Rating from '../../components/Rating/Rating'
+import Dropdown from '../../components/Dropdown/Dropdown'
 
 function Housing() {
     const {rentalId} = useParams()
     const rentalInfo = rental_list.find(rental =>rental.id === rentalId)
 
     return (
-        <div className='main_container rental_info'>
-            <div>
-                <Slideshow rentalInfo={rentalInfo}/>
+        <div className='main_container housing'>
+            <Slideshow rentalInfo={rentalInfo} />
+            <div className='housing__titleLocationTags'>
                 <h1>{rentalInfo.title}</h1>
                 <p>{rentalInfo.location}</p>
-                <Tags rentalInfo={rentalInfo}/>
+                <Tags rentalInfo={rentalInfo} />
             </div>
-            <div className='ratingHost'>
-                {/* rating */}
-                <div className='ratingHost__host'>
+            <div className='housing__ratingHost'>
+                <Rating rentalInfo={rentalInfo} />
+                <div className='housing__ratingHost__Host'>
                     <p>{rentalInfo.host.name}</p>
                     <img src={rentalInfo.host.picture} 
                         alt={`Profil de ${rentalInfo.host.name}`}
                     />
                 </div>
             </div>
-            <div>
-                {/* description et equipment */}
+            <div className='description_equipement'>
+                <Dropdown
+                    title='Description'
+                    content={rentalInfo.description}
+                />
+                <Dropdown
+                    title='Équipments'
+                    content={rentalInfo.equipments.map((elem, index) =>
+                        <li key={index}>{elem}</li>
+                    )}
+                />
             </div>
         </div>
     )

@@ -5,9 +5,9 @@ import "./stylesheet.css"
 import Home from './pages/Home'
 import APropos from './pages/APropos'
 import Housing from './pages/Housing'
-import Error from './components/error/Error'
-import Header from './components/header/Header'
-import Footer from './components/footer/Footer'
+import Error from './components/Error/Error'
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

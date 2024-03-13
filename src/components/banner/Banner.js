@@ -1,7 +1,8 @@
-function Banner({children}) {
+function Banner({bannerSrc, text}) {
     return (
         <div className="banner">
-            {children}
+            <img src={bannerSrc} alt="bannière"/>
+            {text}
         </div>
     )
 }
