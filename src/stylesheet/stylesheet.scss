@@ -1,0 +1,25 @@
+@use '../utils/utils';
+@use '../utils/reset_css';
+@use '../pages/Home/home';
+@use '../pages/Housing/housing';
+@use '../components/Header/header';
+@use '../components/Error/error';
+@use '../components/Banner/banner';
+@use '../components/Thumbnail/_thumbnail.scss';
+@use '../components/Footer/footer';
+@use '../components/Dropdown/dropdown';
+@use '../components/Slideshow/slideshow';
+@use '../components/Tags/tags';
+@use '../components/Rating/rating';
+
+a {
+  text-decoration: none;
+}
+.main_container {
+  width: 90%;
+  margin: 0 auto 27px auto;
+
+  @include utils.large-screen {
+    margin-bottom: 50px;
+  }
+}

@@ -1,50 +1,55 @@
-@use "../../utils/utils";
+@use '../../utils/utils';
 
-.housing{
-    &__titleLocationTags {
-        h1 {
-            @include utils.font(18px, 500);
-            color: #FF6060;
-            line-height: 26px;
+.housing {
+  @include utils.large-screen {
+    margin-top: 50px !important;
+  }
 
-            @include utils.large-screen {
-                @include utils.font(36px, 500);
-                color: #FF6060;
-            }
-        }
-        p {
-            @include utils.font(14px, 500);
-            margin: 15px 0;
+  &__titleLocationTags {
+    h1 {
+      @include utils.font(18px, 500);
+      color: #ff6060;
+      line-height: 26px;
+      margin-top: 40px;
 
-            @include utils.large-screen {
-                @include utils.font(18px, 500);
-            }
-        }
+      @include utils.large-screen {
+        @include utils.font(36px, 500);
+        color: #ff6060;
+      }
     }
-    &__ratingHost {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 15px 0 12px 0;
+    p {
+      @include utils.font(14px, 500);
+      margin: 15px 0;
 
-        &__Host {
-            display: flex;
-            align-items: center;
-
-            p {
-                display: inline-block;
-                width: 50px;
-                margin-right: 10px;
-                @include utils.font(12px, 500);
-                color: #FF6060;
-                text-align: end;
-                line-height: 17px;
-            }
-            img {
-                width: 32px;
-                height: auto;
-                border-radius: 50%;
-            }
-        }
+      @include utils.large-screen {
+        @include utils.font(18px, 500);
+      }
     }
+  }
+  &__ratingHost {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0 12px 0;
+
+    &__Host {
+      display: flex;
+      align-items: center;
+
+      p {
+        display: inline-block;
+        width: 50px;
+        margin-right: 10px;
+        @include utils.font(12px, 500);
+        color: #ff6060;
+        text-align: end;
+        line-height: 17px;
+      }
+      img {
+        width: 32px;
+        height: auto;
+        border-radius: 50%;
+      }
+    }
+  }
 }

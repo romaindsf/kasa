@@ -1,12 +1,10 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
-function Thumbnail ({id, cover, title}) {
-    return (
-        <Link to={`/housing/${id}`} className="thumbnail">
-            <img src={cover} alt={`Couverture de ${title}`}/>
-            <figcaption>{title}</figcaption>
-        </Link>       
-    )
+export default function Thumbnail({ id, cover, title }) {
+  return (
+    <Link to={`/logement/${id}`} className="thumbnail">
+      <img src={cover} alt={`Couverture de ${title}`} />
+      <figcaption>{title}</figcaption>
+    </Link>
+  )
 }
-
-export default Thumbnail

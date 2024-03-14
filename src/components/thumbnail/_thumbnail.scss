@@ -1,22 +1,22 @@
-@use "../../utils/utils";
+@use '../../utils/utils';
 
 .thumbnail {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    cursor: pointer;
-    img {
-        width: 100%;
-        height: 100%;
-        display: block;
-        object-fit: cover;
-    }
-    figcaption {
-        position: absolute;
-        bottom: 6%;
-        left: 6%;
-        width: 50%;
-        @include utils.font(18px, 700);
-        color: white;
-    }
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  figcaption {
+    position: absolute;
+    bottom: 6%;
+    left: 6%;
+    width: 50%;
+    @include utils.font(18px, 700);
+    color: white;
+  }
 }
