@@ -17,6 +17,7 @@ a {
 }
 .main_container {
   width: 90%;
+  max-width: 1240px;
   margin: 0 auto 27px auto;
 
   @include utils.large-screen {

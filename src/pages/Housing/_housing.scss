@@ -3,6 +3,12 @@
 .housing {
   @include utils.large-screen {
     margin-top: 50px !important;
+
+    > div:nth-child(2) {
+      margin: 40px 0 24px 0;
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &__titleLocationTags {
@@ -15,6 +21,7 @@
       @include utils.large-screen {
         @include utils.font(36px, 500);
         color: #ff6060;
+        margin-top: 0;
       }
     }
     p {
@@ -23,6 +30,7 @@
 
       @include utils.large-screen {
         @include utils.font(18px, 500);
+        margin-bottom: 25px;
       }
     }
   }
@@ -31,6 +39,11 @@
     justify-content: space-between;
     align-items: center;
     margin: 15px 0 12px 0;
+
+    @include utils.large-screen {
+      margin: 0;
+      flex-direction: column-reverse;
+    }
 
     &__Host {
       display: flex;
@@ -44,11 +57,32 @@
         color: #ff6060;
         text-align: end;
         line-height: 17px;
+
+        @include utils.large-screen {
+          @include utils.font(18px, 500);
+          color: #ff6060;
+        }
       }
       img {
         width: 32px;
         height: auto;
         border-radius: 50%;
+
+        @include utils.large-screen {
+          width: 64px;
+        }
+      }
+    }
+  }
+  .description_equipement {
+    @include utils.large-screen {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      gap: 78px;
+
+      > div {
+        width: 100%;
       }
     }
   }
