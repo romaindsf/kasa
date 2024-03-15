@@ -52,18 +52,18 @@ input {
   grid: auto/1fr;
   gap: 20px;
 }
-@media screen and (min-width: 576px) and (max-width: 992px) {
+@media screen and (min-width: 576px) and (max-width: 1380px) {
   .rental_list {
     grid: auto/repeat(2, 1fr);
     gap: 2%;
     border-radius: 25px;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1380px) {
   .rental_list {
     grid: auto/repeat(3, 1fr);
-    padding: 6%;
-    gap: 3%;
+    padding: 56px 50px 43px 50px;
+    gap: 50px 60px;
     background-color: #f6f6f6;
     border-radius: 25px;
   }
@@ -130,6 +130,13 @@ input {
   display: flex;
   align-items: center;
 }
+@media (min-width: 480px) {
+  .housing__ratingHost__Host {
+    justify-content: flex-end;
+    width: 100%;
+    gap: 10px;
+  }
+}
 .housing__ratingHost__Host p {
   display: inline-block;
   width: 50px;
@@ -168,6 +175,13 @@ input {
     justify-content: space-between;
     gap: 78px;
   }
+  .housing .description_equipement .dropdown__title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    color: white;
+  }
   .housing .description_equipement > div {
     width: 100%;
   }
@@ -181,8 +195,18 @@ header {
   max-width: 1240px;
   margin: 20px auto 27px auto;
 }
+@media (min-width: 480px) {
+  header {
+    margin: 45px auto 55px auto;
+  }
+}
 header img {
   height: 47px;
+}
+@media (min-width: 480px) {
+  header img {
+    height: 62px;
+  }
 }
 header nav {
   display: flex;
@@ -286,20 +310,20 @@ header a:first-of-type {
   overflow: hidden;
   border-radius: 10px;
   width: 100%;
-  height: 10vh;
+  height: 110px;
   background-color: black;
   margin-bottom: 22px;
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
   .banner {
-    height: 15vh;
+    height: 164px;
     border-radius: 17px;
     margin-bottom: 32px;
   }
 }
 @media screen and (min-width: 992px) {
   .banner {
-    height: 20vh;
+    height: 223px;
     border-radius: 25px;
     margin-bottom: 43px;
   }
@@ -319,13 +343,14 @@ header a:first-of-type {
   color: black;
   color: white;
 }
-@media screen and (min-width: 576px) and (max-width: 992px) {
+@media screen and (min-width: 576px) {
   .banner p {
     font-family: "Montserrat", sans-serif;
     font-size: 36px;
     font-weight: 700;
     color: black;
     color: white;
+    left: auto;
   }
 }
 @media screen and (min-width: 992px) {
@@ -335,13 +360,14 @@ header a:first-of-type {
     font-weight: 700;
     color: black;
     color: white;
+    left: auto;
   }
 }
-.banner .a_la_ligne {
+.banner p .a_la_ligne {
   display: block;
 }
 @media (min-width: 480px) {
-  .banner .a_la_ligne {
+  .banner p .a_la_ligne {
     display: inline;
   }
 }
@@ -351,6 +377,12 @@ header a:first-of-type {
   overflow: hidden;
   border-radius: 10px;
   cursor: pointer;
+}
+@media screen and (min-width: 1380px) {
+  .thumbnail {
+    width: 340px;
+    height: 340px;
+  }
 }
 .thumbnail img {
   width: 100%;
@@ -390,7 +422,12 @@ footer {
     font-size: 24px;
     font-weight: 500;
     color: black;
-    padding-bottom: 30px;
+    padding-bottom: 38px;
+  }
+}
+@media (min-width: 480px) {
+  footer img {
+    height: 32px;
   }
 }
 footer p {
@@ -428,6 +465,11 @@ footer p {
 .dropdown__title svg {
   font-size: 16px;
   margin-right: 2px;
+}
+@media (min-width: 480px) {
+  .dropdown__title svg {
+    font-size: 24px;
+  }
 }
 .dropdown__title__active {
   transform: rotate(180deg);
@@ -497,15 +539,45 @@ footer p {
 }
 .slideshow .arrow {
   position: absolute;
-  border: none;
-  background-color: transparent;
+  font-size: 20px;
+  color: white;
   cursor: pointer;
 }
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .slideshow .arrow {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .slideshow .arrow {
+    font-size: 80px;
+  }
+}
 .slideshow .arrow__left {
-  left: 0px;
+  left: 6px;
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .slideshow .arrow__left {
+    left: 15px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .slideshow .arrow__left {
+    left: 24px;
+  }
 }
 .slideshow .arrow__right {
-  right: 0px;
+  right: 6px;
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .slideshow .arrow__right {
+    right: 15px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .slideshow .arrow__right {
+    right: 24px;
+  }
 }
 
 .tags_list {

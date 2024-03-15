@@ -8,17 +8,17 @@
   overflow: hidden;
   border-radius: 10px;
   width: 100%;
-  height: 10vh;
+  height: 110px;
   background-color: black;
   margin-bottom: 22px;
 
   @media screen and (min-width: 576px) and (max-width: 992px) {
-    height: 15vh;
+    height: 164px;
     border-radius: 17px;
     margin-bottom: 32px;
   }
   @media screen and (min-width: 992px) {
-    height: 20vh;
+    height: 223px;
     border-radius: 25px;
     margin-bottom: 43px;
   }
@@ -34,20 +34,22 @@
     @include utils.font(24px, 700);
     color: white;
 
-    @media screen and (min-width: 576px) and (max-width: 992px) {
+    @media screen and (min-width: 576px) {
       @include utils.font(36px, 700);
       color: white;
+      left: auto;
     }
     @media screen and (min-width: 992px) {
       @include utils.font(48px, 700);
       color: white;
+      left: auto;
     }
-  }
-  .a_la_ligne {
-    display: block;
+    .a_la_ligne {
+      display: block;
 
-    @include utils.large-screen {
-      display: inline;
+      @include utils.large-screen {
+        display: inline;
+      }
     }
   }
 }

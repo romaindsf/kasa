@@ -20,6 +20,10 @@
     svg {
       font-size: 16px;
       margin-right: 2px;
+
+      @include utils.large-screen {
+        font-size: 24px;
+      }
     }
     &__active {
       transform: rotate(180deg);

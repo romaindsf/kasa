@@ -8,8 +8,16 @@ header {
   max-width: 1240px;
   margin: 20px auto 27px auto;
 
+  @include utils.large-screen {
+    margin: 45px auto 55px auto;
+  }
+
   img {
     height: 47px;
+
+    @include utils.large-screen {
+      height: 62px;
+    }
   }
   nav {
     display: flex;

@@ -5,15 +5,15 @@
   grid: auto / 1fr;
   gap: 20px;
 
-  @media screen and (min-width: 576px) and (max-width: 992px) {
+  @media screen and (min-width: 576px) and (max-width: 1380px) {
     grid: auto / repeat(2, 1fr);
     gap: 2%;
     border-radius: 25px;
   }
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 1380px) {
     grid: auto / repeat(3, 1fr);
-    padding: 6%;
-    gap: 3%;
+    padding: 56px 50px 43px 50px;
+    gap: 50px 60px;
     background-color: #f6f6f6;
     border-radius: 25px;
   }

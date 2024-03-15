@@ -12,7 +12,13 @@ footer {
 
   @include utils.large-screen {
     @include utils.font(24px, 500);
-    padding-bottom: 30px;
+    padding-bottom: 38px;
+  }
+
+  img {
+    @include utils.large-screen {
+      height: 32px;
+    }
   }
   p {
     width: 110px;

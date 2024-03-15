@@ -11,11 +11,10 @@ export default function Dropdown({ title, content, index }) {
 
   return (
     <>
-      <div className="dropdown__title" key={index}>
+      <div className="dropdown__title" key={index} onClick={handleClick}>
         {title}
         <FontAwesomeIcon
           icon={faChevronUp}
-          onClick={handleClick}
           className={
             openIndex === index
               ? 'dropdown__title__active'

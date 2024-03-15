@@ -1,4 +1,7 @@
 import React, { useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 
 export default function Slideshow({ rentalInfo }) {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -20,16 +23,24 @@ export default function Slideshow({ rentalInfo }) {
   }
   return (
     <div className="slideshow">
-      <button onClick={prevSlide} className="arrow arrow__left" type="button">
-        ---
-      </button>
+      {rentalInfo.pictures.length > 1 && (
+        <FontAwesomeIcon
+          icon={faChevronLeft}
+          onClick={prevSlide}
+          className="arrow arrow__left"
+        />
+      )}
       <img
         src={rentalInfo.pictures[currentSlide]}
         alt={`aperçu ${rentalInfo.title}`}
       />
-      <button onClick={nextSlide} className="arrow arrow__right" type="button">
-        +++
-      </button>
+      {rentalInfo.pictures.length > 1 && (
+        <FontAwesomeIcon
+          icon={faChevronRight}
+          onClick={nextSlide}
+          className="arrow arrow__right"
+        />
+      )}
     </div>
   )
 }
