@@ -31,7 +31,6 @@ export default function Housing() {
       </div>
       <div className="description_equipement">
         <div>
-          {' '}
           <Dropdown title="Description" content={rentalInfo.description} />
         </div>
         <div>

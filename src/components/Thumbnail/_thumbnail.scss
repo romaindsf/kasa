@@ -24,5 +24,11 @@
     width: 50%;
     @include utils.font(18px, 700);
     color: white;
+    background: rgba(228, 228, 228, 0.2);
+    background: linear-gradient(
+      90deg,
+      rgba(170, 170, 170, 1) 0%,
+      rgba(228, 228, 228, 0.1) 100%
+    );
   }
 }

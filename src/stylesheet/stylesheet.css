@@ -134,7 +134,6 @@ input {
   .housing__ratingHost__Host {
     justify-content: flex-end;
     width: 100%;
-    gap: 10px;
   }
 }
 .housing__ratingHost__Host p {
@@ -155,6 +154,7 @@ input {
     font-size: 18px;
     font-weight: 500;
     color: black;
+    width: 100px;
     color: #ff6060;
   }
 }
@@ -401,6 +401,8 @@ header a:first-of-type {
   font-weight: 700;
   color: black;
   color: white;
+  background: rgba(228, 228, 228, 0.2);
+  background: linear-gradient(90deg, rgb(170, 170, 170) 0%, rgba(228, 228, 228, 0.1) 100%);
 }
 
 footer {
@@ -445,6 +447,7 @@ footer p {
 .dropdown__title {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px;
   margin-bottom: 20px;
   border-radius: 5px;

@@ -52,7 +52,6 @@
       @include utils.large-screen {
         justify-content: flex-end;
         width: 100%;
-        gap: 10px;
       }
 
       p {
@@ -66,6 +65,7 @@
 
         @include utils.large-screen {
           @include utils.font(18px, 500);
+          width: 100px;
           color: #ff6060;
         }
       }
