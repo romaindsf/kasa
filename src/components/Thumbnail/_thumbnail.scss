@@ -22,6 +22,8 @@
     bottom: 6%;
     left: 6%;
     width: 50%;
+    padding: 5px 0 5px 5px;
+    border-radius: 5px;
     @include utils.font(18px, 700);
     color: white;
     background: rgba(228, 228, 228, 0.2);
