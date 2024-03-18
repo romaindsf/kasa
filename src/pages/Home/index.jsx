@@ -1,4 +1,3 @@
-import imgSrc from 'falaise_cotiere.avif'
 import rental_list from '../../datas/rental_ad_list.json'
 import Banner from '../../components/Banner/Banner'
 import Thumbnail from '../../components/Thumbnail/Thumbnail'
@@ -7,7 +6,7 @@ export default function Home() {
   return (
     <div className="main_container">
       <Banner
-        imgSrc={imgSrc}
+        imgSrc="falaise_cotiere.avif"
         text={
           <p>
             Chez vous, <span className="a_la_ligne">partout et ailleurs</span>
