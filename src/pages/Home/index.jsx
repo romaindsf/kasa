@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="main_container">
       <Banner
-        imgSrc="falaise_cotiere.avif"
+        imgSrc="assets/falaise_cotiere.avif"
         text={
           <p>
             Chez vous, <span className="a_la_ligne">partout et ailleurs</span>
