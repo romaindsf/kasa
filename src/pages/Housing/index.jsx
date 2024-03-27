@@ -4,10 +4,15 @@ import Slideshow from '../../components/Slideshow/Slideshow'
 import Tags from '../../components/Tags/Tags'
 import Rating from '../../components/Rating/Rating'
 import Dropdown from '../../components/Dropdown/Dropdown'
+import Error from '../../components/Error/Error'
 
 export default function Housing() {
   const { rentalId } = useParams()
   const rentalInfo = rental_list.find((rental) => rental.id === rentalId)
+
+  if (!rentalInfo) {
+    return <Error />
+  }
 
   return (
     <div className="main_container housing">
