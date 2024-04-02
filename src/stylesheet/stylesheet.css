@@ -593,6 +593,23 @@ footer p {
     right: 24px;
   }
 }
+.slideshow figcaption {
+  display: none;
+  position: absolute;
+}
+@media screen and (min-width: 576px) {
+  .slideshow figcaption {
+    display: block;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    color: white;
+  }
+}
 
 .tags_list {
   display: flex;

@@ -63,4 +63,17 @@
       }
     }
   }
+  figcaption {
+    display: none;
+    position: absolute;
+
+    @media screen and (min-width: 576px) {
+      display: block;
+      bottom: 5%;
+      left: 50%;
+      transform: translateX(-50%);
+      @include utils.font(18px, 500);
+      color: white;
+    }
+  }
 }
