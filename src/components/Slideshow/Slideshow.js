@@ -54,7 +54,7 @@ export default function Slideshow({ rentalInfo }) {
       )}
       {rentalInfo.pictures.length > 1 && (
         <figcaption>
-          {`${currentNumber}/${rentalInfo.pictures.length}`}
+          {`${currentNumber + 1}/${rentalInfo.pictures.length}`}
         </figcaption>
       )}
     </div>
